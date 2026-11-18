@@ -19,12 +19,8 @@ const power = function(base, exponent) {
 };
 
 const factorial = function(num) {
-	if (num < 2) {
-    return 1;
-  }
-
   let fact = 1;
-  for (let i = 2; i <= num; i++) {
+  for (let i = num; i > 0; i--) {
     fact *= i;
   }
   return fact;
